@@ -11,7 +11,7 @@ Follow the guides below if you want to set everything up.
 
 ## Fork, GitHub workflow and GitHub pages
 
-GitHub offers free execution of CI/CD workflows and publishing of pages for public repositories. This allows us to execute both the data collection code and the build process of the react web app on runners hosted by GitHub and also publish the website files free of charge. Below is a guide on how to set it up for yourself.
+GitHub offers free execution of CI/CD workflows and publishing of pages for public repositories. This allows us to execute the daily bonus collection code on runners hosted by GitHub free of charge. Below is a guide on how to set it up for yourself.
 
 - **Create a fork of this repository:**
 - **Setup repository secrets:** Those are needed for the execution of the workflows. The values will be masked in workflow logs, so no sensible data will get leaked at any time.
