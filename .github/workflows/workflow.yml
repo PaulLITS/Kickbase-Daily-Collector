@@ -35,5 +35,5 @@ jobs:
     
     - name: Run code
       working-directory: data/
-      run: python -m pipenv run python main.py --mail ${{ secrets.KB_MAIL }} --pw ${{ secrets.KB_PW }} --league="${{ secrets.KB_LEAGUE }}" --start ${{ secrets.START_DATE }}
+      run: python -m pipenv run python main.py --mail ${{ secrets.KB_MAIL }} --pw ${{ secrets.KB_PW }} 
     
