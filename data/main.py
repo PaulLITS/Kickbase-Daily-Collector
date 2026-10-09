@@ -11,7 +11,7 @@ p = configargparse.ArgParser(default_config_files=['settings.conf'])
 p.add('--mail', required=True)
 p.add('--pw', required=True)
 p.add('--league', required=False)
-p.add('--start', required=True)
+p.add('--start', required=False)
 p.add('--ignore', required=False, action='append', default=[])
 
 options = p.parse_args()
