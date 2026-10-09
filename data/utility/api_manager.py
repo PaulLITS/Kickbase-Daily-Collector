@@ -88,7 +88,7 @@ class ApiManager:
         self.start = TIMEZONE_DE.localize(datetime.strptime(start, '%d.%m.%Y'))
     
     def get_bonus(self):
-        self.get("/bonus/collect")
+        print(self.get("/bonus/collect"))
     
     def _auth_cookie(self):
         return "kkstrauth={}".format(self.token)
