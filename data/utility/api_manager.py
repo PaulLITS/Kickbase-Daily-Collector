@@ -13,7 +13,7 @@ def parse_date(date: str) -> datetime:
     return datetime.fromisoformat(date.replace("Z", "+00:00"))
 
 login_url = "https://api.kickbase.com/v4/user/login"
-
+start = '01.07.2023'
 class ApiManager:
     def __init__(self):
         self.base_url: str = "https://api.kickbase.com/v4"
@@ -85,7 +85,7 @@ class ApiManager:
 
         self.users = [user for user in data["us"] 
                       if user["n"] not in options.ignore ]
-        self.start = TIMEZONE_DE.localize(datetime.strptime(options.start, '01.07.2023'))
+        self.start = TIMEZONE_DE.localize(datetime.strptime(options.start, '%d.%m.%Y'))
     
     def get_bonus(self):
         self.get("/bonus/collect")
